@@ -1,0 +1,29 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Centro são luis",
+    "adress": "Rua Luis de nogueira, 230",
+    "location": "João Pessoa",
+    "currentPeople": 25,
+    "maxPeople": 50,
+    "doctors": 2,
+    "volunteers": 4,
+    "veichules": 3,
+    "kits": 80,
+    "basicBasket": 25
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/66ac35364ca202e98576acf0
+
+###
+PUT http://localhost:3000/api/services/66ac35364ca202e98576acf0
+Content-Type: application/json
+
+{
+    "currentPeople": 51
+}
