@@ -9,7 +9,7 @@ Content-Type: application/json
     "maxPeople": 50,
     "doctors": 2,
     "volunteers": 4,
-    "veichules": 3,
+    "vehicles": 3,
     "kits": 80,
     "basicBasket": 25
 }
@@ -25,5 +25,10 @@ PUT http://localhost:3000/api/services/66ac35364ca202e98576acf0
 Content-Type: application/json
 
 {
-    "currentPeople": 51
+    "currentPeople": 51,
+    "doctors": 5,
+    "volunteers": 1,
+    "vehicles": 4,
+    "kits": 150,
+    "basicBasket": 300
 }

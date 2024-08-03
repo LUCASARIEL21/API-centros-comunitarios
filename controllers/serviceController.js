@@ -11,7 +11,7 @@ const serviceController = {
         maxPeople: req.body.maxPeople,
         doctors: req.body.doctors,
         volunteers: req.body.volunteers,
-        veichules: req.body.veichules,
+        vehicles: req.body.vehicles,
         kits: req.body.kits,
         basicBasket: req.body.basicBasket,
       };
@@ -53,6 +53,11 @@ const serviceController = {
 
     const service = {
       currentPeople: req.body.currentPeople,
+      doctors: req.body.doctors,
+      volunteers: req.body.volunteers,
+      vehicles: req.body.vehicles,
+      kits: req.body.kits,
+      basicBasket: req.body.basicBasket,
     };
 
     const updateService = await ServiceModel.findByIdAndUpdate(id, service);

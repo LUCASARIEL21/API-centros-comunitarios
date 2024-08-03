@@ -31,7 +31,7 @@ const serviceSchema = new Schema({
         type: Number,
         require: true
     },
-    veichules:{
+    vehicles:{
         type: Number,
         require:true
     },
