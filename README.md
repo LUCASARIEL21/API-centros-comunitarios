@@ -1,76 +1,46 @@
 ﻿# API Centros Comunitários
 
+> Status: Prodution
+
 [![NPM](https://img.shields.io/npm/l/react)]((https://github.com/LUCASARIEL21/API-centros-comunitarios/blob/main/LICENSE)) 
 
 # Sobre o projeto
 
-Este projeto é uma API RESFull para armazenar informações 
+Este projeto é uma API RESFull para armazenar informações sobre os centros comunitários, seus recursos (pessoais e materiais), informações sobre ocupação, entre outros, ajudando no intercâmbio de recursos entre os centros comunitários.
 
-A aplicação consiste em uma pesquisa de preferência de games, onde os dados são coletados no app mobile, e depois são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
+## View Collection BD mongodb
 
-## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![view bd](https://github.com/user-attachments/assets/ef0ae290-b6fc-4cb0-8ef2-dc58295160a0)
 
-## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
-
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
-
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
 
 # Tecnologias utilizadas
 ## Back end
-- Java
-- Spring Boot
-- JPA / Hibernate
-- Maven
-## Front end
-- HTML / CSS / JS / TypeScript
-- ReactJS
-- React Native
-- Apex Charts
-- Expo
+- Nodejs
+- Express
+- NPM
+
+## Ferramentas
+- Docker
+- Rest Client
+
 ## Implantação em produção
-- Back end: Heroku
-- Front end web: Netlify
-- Banco de dados: Postgresql
+- Banco de dados: Mongodb
 
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
+Pré-requisitos: Node.js V.21
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto back end
-cd backend
+git clone https://github.com/LUCASARIEL21/API-centros-comunitarios
 
 # executar o projeto
-./mvnw spring-boot:run
-```
-
-## Front end web
-Pré-requisitos: npm / yarn
-
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto front end web
-cd front-web
-
-# instalar dependências
-yarn install
-
-# executar o projeto
-yarn start
+npm start
 ```
 
 # Autor
 
-Wellington Mazoni de Andrade
+Lucas Ariel França da Cunha
 
-https://www.linkedin.com/in/wmazoni
+https://www.linkedin.com/in/lucas-ariel-0ab3721ba/
