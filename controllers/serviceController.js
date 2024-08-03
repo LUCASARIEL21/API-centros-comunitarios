@@ -1,4 +1,4 @@
-const { Service: ServiceModel } = require("../models/Service.js");
+const { Service: ServiceModel, Service } = require("../models/Service.js");
 
 const serviceController = {
   create: async (req, res) => {
@@ -17,6 +17,12 @@ const serviceController = {
       };
 
       const response = await ServiceModel.create(service);
+
+      if (service.currentPeople >= service.maxPeople) {
+        res.status(404).json({
+          msg: "Centro Comunitario com capacidade maxima atingida",
+        });
+      }
 
       res.status(201).json({ response, msg: "Serviço criado com sucesso" });
     } catch (error) {
@@ -68,6 +74,7 @@ const serviceController = {
       });
       return;
     }
+
     res.status(200).json({ service, msg: "Serviço atualizado" });
   },
 };
